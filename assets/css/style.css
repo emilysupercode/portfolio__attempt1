@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* GENERAL STYLES */
@@ -11,11 +12,11 @@ html {
 }
 
 /* ASSETS
-#DDDDDD
-#113C4A
-#265A5C
-#3F7B70
-#8BBCCC
+#DDDDDD button hover background
+#113C4A text
+#265A5C button solid background
+#3F7B70 link outside button hover
+#8BBCCC borders
 #FEC260
 */
 
@@ -51,7 +52,7 @@ nav {
     height: 5vh;
 }
 
-nav h1 {
+nav h2 {
     font-size: 2rem;
     display: flex;
     justify-content: flex-start;
@@ -99,22 +100,29 @@ nav ul li.nav__kontakt a:hover {
 
 body header {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
-    justify-content: center;
-    padding: 10vh auto;
+    padding: 0 15vw;
+    /* justify-content: space-between; */
 }
 
 body header section {
-    padding: 15vh 5vw;
+    padding: 0vh 5vw;
+    color: #113C4A;
+    margin: 10vh auto;
 }
 
 body header section p.header__section__welcome,
 body header section h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
-    padding: 2vh 0 4vh 0;
-    /* margin: 2vh 0 2vh 0; */
+}
+
+body header section p.header__section__welcome {
+    margin: 2vh 0 1vh 0;
+}
+
+body header section h1 {
+    margin: 1vh 0 0 0;
 }
 
 body header section h2 {
@@ -127,6 +135,7 @@ body header section h2 {
 
 body header section p.header__section__CVbutton {
     font-size: 1.5rem;
+    margin-top: 4vh;
 }
 
 body header section p.header__section__CVbutton a {
@@ -134,7 +143,6 @@ body header section p.header__section__CVbutton a {
     color: #113C4A;
     background-color: #265A5C;
     border: 2px solid #fff;
-    margin: 4vh 0 0 0;
     padding: 1vh 4vw;
     color: #DDDDDD;
     border-radius: 4px;
@@ -147,6 +155,69 @@ body header section p.header__section__CVbutton a:hover {
     color: #265A5C;
 }
 
+body header section.header__section__headshot figure {
+    display: inline-block;
+    position: relative;
+}
+
+body header section.header__section__headshot figure::before {
+    content: '';
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #8BBCCC;
+}
+
 body header section.header__section__headshot img {
     width: 30vw;
+}
+
+/* ==========================
+            MAIN
+============================= */
+
+main section.main__section__uebermich {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 2vh 10vh 10vh 0;
+    border-top: 3px solid #8BBCCC;
+    border-right: 3px solid #8BBCCC;
+    border-bottom: 3px solid #8BBCCC;
+    padding: 5vh 15.5vw;
+}
+
+main section article h2 {
+    font-family: 'Inter-Bold', sans-serif;
+    color: #113C4A;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+main section article:nth-of-type(2) {
+    font-family: 'Inter-Regular', sans-serif;
+    color: #113C4A;
+    margin-left: 5vw;
+}
+
+main section article p {
+    width: 40vw;
+}
+
+main section article ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding-top: 2vh;
+    width: 15vw;
+}
+
+main section article ul li img {
+    width: 24px;
 }
