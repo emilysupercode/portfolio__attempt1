@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+html {
+    font-size: 10px;
+}
+
+/* ASSETS
+#0F044C
+#141E61 
+#787A91 
+#EEEEEE 
+#E94560
+
+*/
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+nav {
+    color: #E94560;
+    font-family: 'Inter-Regular', sans-serif;
+    display: flex;
+    padding: 4% 3%;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+nav h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 0.3rem;
+}
+
+nav ul {
+    font-size: 1.5rem;
+    display: flex;
+    width: 50vw;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0F044C;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #0F044C;
+}
+
+nav ul li.nav__kontakt a {
+    background-color: #E94560;
+    padding: 1vh 4vw;
+    color: white;
+}
+
+nav ul li.nav__kontakt a:hover {
+    background-color: white;
+    border: 2px solid #E94560;
+    color: #E94560;
+}
