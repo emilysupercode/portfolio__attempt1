@@ -24,6 +24,24 @@ html {
     src: url("../fonts/Inter-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url("../fonts/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url("../fonts/Inter-Bold.ttf");
+}
+
+html {
+    font-family: 'Inter-Regular', sans-serif;
+}
+
+/* ==========================
+            NAV
+============================= */
+
 nav {
     color: #113C4A;
     font-family: 'Inter-Regular', sans-serif;
@@ -73,4 +91,62 @@ nav ul li.nav__kontakt a:hover {
     border: 2px solid #265A5C;
     border-radius: 4px;
     color: #265A5C;
+}
+
+/* ==========================
+            HEADER
+============================= */
+
+body header {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+    padding: 10vh auto;
+}
+
+body header section {
+    padding: 15vh 5vw;
+}
+
+body header section p.header__section__welcome,
+body header section h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 2vh 0 4vh 0;
+    /* margin: 2vh 0 2vh 0; */
+}
+
+body header section h2 {
+    font-family: 'Inter-Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+body header section p.header__section__CVbutton {
+    font-size: 1.5rem;
+}
+
+body header section p.header__section__CVbutton a {
+    text-decoration: none;
+    color: #113C4A;
+    background-color: #265A5C;
+    border: 2px solid #fff;
+    margin: 4vh 0 0 0;
+    padding: 1vh 4vw;
+    color: #DDDDDD;
+    border-radius: 4px;
+}
+
+body header section p.header__section__CVbutton a:hover {
+    background-color: #DDDDDD;
+    border: 2px solid #265A5C;
+    border-radius: 4px;
+    color: #265A5C;
+}
+
+body header section.header__section__headshot img {
+    width: 30vw;
 }
